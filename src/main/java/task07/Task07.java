@@ -5,14 +5,11 @@
 package task07;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Task07 {
     public static void main(String[] args) {
-        ArrayList<String> stringList = new ArrayList<>();
-        stringList.add("first");
-        stringList.add("second");
-        stringList.add("third");
-        stringList.add("last");
+        ArrayList<String> stringList = new ArrayList<>(Arrays.asList("first", "second", "third", "last"));
 
         ArrayList<String> newStringList = new ArrayList<>();
 
