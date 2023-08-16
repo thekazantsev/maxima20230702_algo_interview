@@ -16,6 +16,7 @@ public class Task02 {
         List<Integer> integerList = Arrays.asList(1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89);
 
         List<Integer> integerListLess5 = lessThan5Method2(integerList);
+
         for (Integer current : integerListLess5) {
             System.out.println(current);
         }
@@ -34,6 +35,6 @@ public class Task02 {
     private static List<Integer> lessThan5Method2 (List<Integer> integerList) {
         return integerList.stream()
             .filter(i -> i < 5)
-            .collect(Collectors.toList());
+            .toList();
     }
 }

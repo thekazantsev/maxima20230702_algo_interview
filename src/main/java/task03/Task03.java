@@ -44,6 +44,6 @@ public class Task03 {
         return integerList1.stream()
             .distinct()
             .filter(integerList2::contains)
-            .collect(toList());
+            .toList();
     }
 }
